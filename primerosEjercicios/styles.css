@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ejer{
+    margin: 70px;
+}
+
+.pr{
+    width: 300px;
+    height: 300px;
+    background: blue;
+    border: 8px solid black;
+}
+
+
+
+#ejer2 .pr .sc{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border: 8px solid red;
+    margin: 10px;
+}
+
+
+#ejer3 .pr .sc{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+
+#ejer4 .pr .sc{
+    width: 100px;
+    height: 100px;
+    margin-top: 80%;
+    background: yellow;
+}
+
+#ejer5 .pr .sc{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+#ejer6 .pr .sc{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+#ejer7 .pr .sc{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: yellow;
+}
+
+
+
+#ejer8 .pr{
+    padding: 20px;
+}
+
+#ejer8 .pr .sc{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+
+#ejer9 .pr{
+    padding: 20px;
+}
+
+#ejer9 .pr .sc{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: yellow;
+    margin: 15px auto;
+}
+
+.sc10{
+    background: yellow;
+    border: 3px solid black;
+    width: 50%;
+    height: 10%;
+}

@@ -23,40 +23,48 @@ header > div img {
 }
 
 /*Section*/
-
 .container-info div {
   display: grid;
   text-align: center;
   justify-items: center;
+  position: relative;
+}
+.container-info > div div  a {
+  padding: 10px;
+  background: #37a0d9;
+  color: white;
+  text-decoration:none;
+  display: block;
 }
 
 .container-info div > div {
-  border-radius: 100%;
-  border: 1px solid black;
+  margin: 1em;
+}
 
-  /*height: 20vh;*/
+.container-info div > div > p {
   align-content: center;
+  color: white;
+  backdrop-filter: blur(4px);
+  font: 14pt verdana;
+  margin: 0.6em;
 }
 
 .container-info div:nth-child(1) > div {
-  background: url(./logo.jpg) no-repeat center center;
+  background: url(./img/doblePerro.jpg) no-repeat center center;
+  background-size: auto 100%;
 }
 
 .container-info div:nth-child(2) > div {
-  background: url(./logo.jpg) no-repeat center center;
+  background: url(./img/MuchosPerros.jpg) no-repeat center center;
+  background-size: auto 100%;
 }
 
 .container-info div:nth-child(3) > div {
-  background: url(./logo.jpg) no-repeat center center;
+  background: url(./img/PerroSorprendido.jpg) no-repeat center center;
+  background-size: auto 100%;
 }
 
 @media (min-width: 1000px) {
-  /*Texto logo header*/
-  /* div:nth-child(1) span{
-    background: red;
-    width: 100%;
-    height: 20px;
-} */
   .container-info {
     display: grid;
     grid-template-columns: 20% 50% 20%;
@@ -73,6 +81,13 @@ header > div img {
   .container-info div:nth-child(1) {
     align-items: start;
   }
+  .container-info div > div {
+    border-radius: 100%;
+    border: 1px solid black;
+  
+    /*height: 20vh;*/
+    align-content: center;
+  }
 
   .container-info div:nth-child(1) > div {
     height: 10em;
@@ -87,6 +102,26 @@ header > div img {
   .container-info div:nth-child(3) > div {
     height: 15em;
     width: 15em;
+  }
+
+  .container-info > div div  a {
+    border-radius: 100%;
+    position: relative;
+  }
+
+  .container-info div:nth-child(1) > div  a {
+    top: 5em;
+    left: 5em;
+  }
+
+  .container-info div:nth-child(2) > div  a {
+    top: 13em;
+    left: 13em;
+  }
+
+  .container-info div:nth-child(3) > div  a {
+    top: 7em;
+    left: 7em;
   }
 }
 

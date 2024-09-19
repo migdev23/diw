@@ -12,15 +12,27 @@ header > div img {
   margin: 0px auto;
 }
 
+@keyframes animacionScaleCirculos {
+    0%{
+        transform: scale(0.1);
+    }
+
+    50%{
+      transform: scale(1.2);
+    }
+
+    100%{
+      transform: scale(1);
+    }
+}
+
 .container-info {
+  width: 90%;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.container-info > div > div {
-  width: 100%;
-  border-radius: 10px;
-}
 
 /*Section*/
 .container-info div {
@@ -29,16 +41,30 @@ header > div img {
   justify-items: center;
   position: relative;
 }
+
 .container-info > div div  a {
-  padding: 10px;
+  padding: 15px;
   background: #37a0d9;
   color: white;
   text-decoration:none;
   display: block;
+  transition-duration:0.5s;
 }
+
+.container-info > div div  a:hover {
+  transform: scale(0.8);
+}
+
 
 .container-info div > div {
   margin: 1em;
+  border-radius: 1%;
+  transition: border-radius 3s;
+  
+  /*Animacion circulos*/
+  transform: scale(0);
+  animation: animacionScaleCirculos 1s;
+  animation-fill-mode: forwards;
 }
 
 .container-info div > div > p {
@@ -52,11 +78,13 @@ header > div img {
 .container-info div:nth-child(1) > div {
   background: url(./img/doblePerro.jpg) no-repeat center center;
   background-size: auto 100%;
+  animation-delay: 0.5s;
 }
 
 .container-info div:nth-child(2) > div {
   background: url(./img/MuchosPerros.jpg) no-repeat center center;
   background-size: auto 100%;
+  animation-delay: 1s;
 }
 
 .container-info div:nth-child(3) > div {
@@ -82,11 +110,10 @@ header > div img {
     align-items: start;
   }
   .container-info div > div {
+    transition: border-radius 3s;
     border-radius: 100%;
-    border: 1px solid black;
-  
-    /*height: 20vh;*/
     align-content: center;
+   box-shadow: 0px 0px 8px red;
   }
 
   .container-info div:nth-child(1) > div {

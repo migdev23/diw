@@ -97,7 +97,7 @@ header > div img {
     display: grid;
     grid-template-columns: 20% 50% 20%;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 0px;
     height: 50vh;
   }
   .container-info div:nth-child(3) {

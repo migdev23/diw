@@ -4,7 +4,6 @@
 }
 
 /*Contenedor header*/
-
 header > div img {
   display: block;
   border-radius: 100%;
@@ -92,13 +91,25 @@ header > div img {
   background-size: auto 100%;
 }
 
+footer{
+  width: 100%;
+  border-top: 2px solid #5EB801;
+  text-align: center;
+  padding: 20px 0px;
+  background: #F47621;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 @media (min-width: 1000px) {
   .container-info {
     display: grid;
     grid-template-columns: 20% 50% 20%;
     justify-content: center;
     grid-gap: 0px;
-    height: 50vh;
+    padding: 3em 0em;
   }
   .container-info div:nth-child(3) {
     align-items: end;
@@ -113,7 +124,7 @@ header > div img {
     transition: border-radius 3s;
     border-radius: 100%;
     align-content: center;
-   box-shadow: 0px 0px 8px red;
+   box-shadow: 0px 0px 8px #F47621;
   }
 
   .container-info div:nth-child(1) > div {
@@ -151,5 +162,7 @@ header > div img {
     left: 7em;
   }
 }
+
+
 
 /******/
